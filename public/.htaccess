@@ -5,11 +5,23 @@
 
     RewriteEngine On
 
+<<<<<<< HEAD
     # Redirect Trailing Slashes...
+=======
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+<<<<<<< HEAD
+=======
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
 </IfModule>

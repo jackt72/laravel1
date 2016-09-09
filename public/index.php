@@ -1,9 +1,17 @@
 <?php
+<<<<<<< HEAD
+=======
+
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
+<<<<<<< HEAD
  * @author   Taylor Otwell <taylorotwell@gmail.com>
+=======
+ * @author   Taylor Otwell <taylor@laravel.com>
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
  */
 
 /*
@@ -46,10 +54,17 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 |
 */
 
+<<<<<<< HEAD
 $kernel = $app->make('Illuminate\Contracts\Http\Kernel');
 
 $response = $kernel->handle(
 	$request = Illuminate\Http\Request::capture()
+=======
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
 );
 
 $response->send();

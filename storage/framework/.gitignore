@@ -1,6 +1,14 @@
 config.php
 routes.php
+<<<<<<< HEAD
+=======
+schedule-*
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
 compiled.php
 services.json
 events.scanned.php
 routes.scanned.php
+<<<<<<< HEAD
+=======
+down
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d

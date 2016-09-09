@@ -7,6 +7,7 @@
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
+<<<<<<< HEAD
          stopOnFailure="false"
          syntaxCheck="false">
     <testsuites>
@@ -14,6 +15,19 @@
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
+=======
+         stopOnFailure="false">
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+        </whitelist>
+    </filter>
+>>>>>>> 42e9e963183f1e23f378849f909f89e3ace7720d
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="CACHE_DRIVER" value="array"/>
