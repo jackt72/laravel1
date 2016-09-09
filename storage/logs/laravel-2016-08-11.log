@@ -1,0 +1,60 @@
+[2016-08-11 17:20:50] local.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "controller" namespace.' in D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php:501
+Stack trace:
+#0 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(535): Symfony\Component\Console\Application->findNamespace('controller')
+#1 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Command\HelpCommand.php(76): Symfony\Component\Console\Application->find('controller:make')
+#2 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(253): Symfony\Component\Console\Command\HelpCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(Symfony\Component\Console\Command\HelpCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\projects\LaravelxP\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2016-08-11 17:41:23] local.ERROR: exception 'RuntimeException' with message 'Not enough arguments.' in D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\Input.php:77
+Stack trace:
+#0 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(248): Symfony\Component\Console\Input\Input->validate()
+#1 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\ModelMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\projects\LaravelxP\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 {main}  
+[2016-08-11 17:43:37] local.ERROR: exception 'RuntimeException' with message 'The "--resource" option does not exist.' in D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(154): Symfony\Component\Console\Input\ArgvInput->addLongOption('resource', NULL)
+#1 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--resource')
+#2 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(61): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(225): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Routing\Console\ControllerMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\projects\LaravelxP\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
+[2016-08-11 17:43:49] local.ERROR: exception 'RuntimeException' with message 'The "--resource" option does not exist.' in D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:213
+Stack trace:
+#0 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(154): Symfony\Component\Console\Input\ArgvInput->addLongOption('resource', NULL)
+#1 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(86): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--resource')
+#2 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(61): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(225): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Routing\Console\ControllerMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\projects\LaravelxP\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
+[2016-08-11 17:44:11] local.ERROR: exception 'RuntimeException' with message 'The "-r" option does not exist.' in D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php:128
+Stack trace:
+#0 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(109): Symfony\Component\Console\Input\ArgvInput->parseShortOptionSet('resource')
+#1 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\ArgvInput.php(88): Symfony\Component\Console\Input\ArgvInput->parseShortOption('-resource')
+#2 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Input\Input.php(61): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(225): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Routing\Console\ControllerMakeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 D:\projects\LaravelxP\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 D:\projects\LaravelxP\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 D:\projects\LaravelxP\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
